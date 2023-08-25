@@ -5,15 +5,12 @@ metadata:
   name: home-kubernetes
   namespace: flux-system
 spec:
-  interval: 30m
+  interval: 10m
   ref:
     branch: main
-  url: "https://github.com/ClintElliotMalcolm/homelab.git"
-  ignore: |
-    # exclude all
-    /*
-    # include kubernetes directory
-    !/kubernetes
+  secretRef:
+    name: github-deploy-key
+  url: "ssh://git@github.com/ClintElliotMalcolm/homelab.git"
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
