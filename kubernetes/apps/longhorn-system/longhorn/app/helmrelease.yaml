@@ -34,11 +34,8 @@ spec:
       enabled: true
       ingressClassName: internal
       annotations:
-      hosts:
-        - host: &host "longhorn.${SECRET_DOMAIN}"
-          paths:
-            - path: /
-              pathType: Prefix
+      host: &host "longhorn.${SECRET_DOMAIN}"
+      path: /
       secureBackends: true
       tls:
         - hosts:
