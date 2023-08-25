@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  # longhorn-system is a required namespace name by Longhorn
+  # https://github.com/longhorn/charts/tree/master/charts/longhorn#:~:text=Important%3A%20Please%20install%20the%20Longhorn%20chart%20in%20the%20longhorn%2Dsystem%20namespace%20only.
+  name: longhorn-system
+  labels:
+    kustomize.toolkit.fluxcd.io/prune: disabled
