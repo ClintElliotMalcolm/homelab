@@ -29,7 +29,7 @@ spec:
       strategy: RollingUpdate
     image:
       repository: docker.io/traefik/whoami
-      tag: v1.10
+      tag: v1.10.1
     service:
       main:
         ports:
@@ -67,7 +67,8 @@ spec:
               - *host
     resources:
       requests:
-        cpu: 5m
-        memory: 10Mi
+        cpu: 10m
+        memory: 16Mi
       limits:
-        memory: 50Mi
+        cpu: 100m
+        memory: 320Mi
