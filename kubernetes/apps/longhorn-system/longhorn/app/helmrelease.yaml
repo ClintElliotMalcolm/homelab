@@ -27,14 +27,13 @@ spec:
   uninstall:
     keepHistory: false
   dependsOn:
-    - name: ingress-nginx
+    - name: nginx-internal
       namespace: networking
   values:
     ingress:
       enabled: true
-      ingressClassName: external
+      ingressClassName: internal
       annotations:
-
       hosts:
         - host: &host "{{ .Release.Name }}.${SECRET_DOMAIN}"
           paths:
