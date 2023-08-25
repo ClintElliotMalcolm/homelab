@@ -35,7 +35,7 @@ spec:
       ingressClassName: internal
       annotations:
       hosts:
-        - host: &host "{{ .Release.Name }}.${SECRET_DOMAIN}"
+        - host: &host "longhorn.${SECRET_DOMAIN}"
           paths:
             - path: /
               pathType: Prefix
