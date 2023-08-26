@@ -138,7 +138,7 @@ spec:
               storageClassName: longhorn-crypto-global
               resources:
                 requests:
-                  storage: 10Gi
+                  storage: 5Gi
     grafana:
       enabled: false
       forceDeployDashboards: true
