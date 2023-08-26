@@ -8,7 +8,9 @@ spec:
   interval: 30m
   ref:
     branch: main
-  url: "https://github.com/ClintElliotMalcolm/homelab.git"
+  secretRef:
+    name: github-deploy-key
+  url: "ssh://git@github.com/ClintElliotMalcolm/homelab.git"
   ignore: |
     # exclude all
     /*
