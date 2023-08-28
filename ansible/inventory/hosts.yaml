@@ -6,12 +6,12 @@ kubernetes:
         kobold-1:
           ansible_user: kobold
           ansible_host: 192.168.1.184
-        kobold-2:
-          ansible_user: kobold
-          ansible_host: 192.168.1.118
         kobold-4:
           ansible_user: kobold
           ansible_host: 192.168.1.238
+        kobold-5-dragonshield:
+          ansible_user: kobold
+          ansible_host: 192.168.1.116
     worker:
       hosts:
         kobold-1:
@@ -26,3 +26,6 @@ kubernetes:
         kobold-4:
           ansible_user: kobold
           ansible_host: 192.168.1.238
+        kobold-5-dragonshield:
+          ansible_user: kobold
+          ansible_host: 192.168.1.116
