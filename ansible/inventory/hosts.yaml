@@ -29,3 +29,6 @@ kubernetes:
         kobold-5-dragonshield:
           ansible_user: kobold
           ansible_host: 192.168.1.116
+        kobold-6:
+          ansible_user: kobold
+          ansible_host: 192.168.1.119
