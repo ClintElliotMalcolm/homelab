@@ -6,9 +6,9 @@ kubernetes:
         kobold-1:
           ansible_user: kobold
           ansible_host: 192.168.1.184
-        kobold-4:
+        kobold-7-scale-sorcerer:
           ansible_user: kobold
-          ansible_host: 192.168.1.238
+          ansible_host: 192.168.1.243
         kobold-5-dragonshield:
           ansible_user: kobold
           ansible_host: 192.168.1.116
@@ -32,3 +32,6 @@ kubernetes:
         kobold-6:
           ansible_user: kobold
           ansible_host: 192.168.1.119
+        kobold-7-scale-sorcerer:
+          ansible_user: kobold
+          ansible_host: 192.168.1.243
