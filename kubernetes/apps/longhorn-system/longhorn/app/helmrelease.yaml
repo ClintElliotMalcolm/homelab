@@ -45,3 +45,9 @@ spec:
       storageOverProvisioningPercentage: 200 # "If you need to use the root disk, use the default minimal available storage percentage setup which is 25%, and set overprovisioning percentage to 200% to minimize the chance of DiskPressure."
     annotations:
       secret.reloader.stakater.com/reload: longhorn-secret
+    longhornManager:
+      nodeSelector: "storage=longhorn"
+    longhornUI:
+      nodeSelector: "storage=longhorn"
+    longhornDriverDeployer:
+      nodeSelector: "storage=longhorn"
