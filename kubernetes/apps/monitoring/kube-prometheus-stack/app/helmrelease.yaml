@@ -132,6 +132,8 @@ spec:
         enableAdminAPI: true
         walCompression: true
         retentionSize: 8GB
+        nodeSelector:
+          storage: longhorn
         storageSpec:
           volumeClaimTemplate:
             spec:
