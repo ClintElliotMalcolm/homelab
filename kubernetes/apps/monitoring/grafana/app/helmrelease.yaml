@@ -35,6 +35,8 @@ spec:
     env:
       GF_EXPLORE_ENABLED: true
       GF_SERVER_ROOT_URL: "https://grafana.${SECRET_DOMAIN}"
+    nodeSelector:
+      storage: longhorn
     grafana.ini:
       analytics:
         check_for_updates: false
