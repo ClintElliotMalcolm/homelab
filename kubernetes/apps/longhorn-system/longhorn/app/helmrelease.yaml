@@ -46,8 +46,11 @@ spec:
     annotations:
       secret.reloader.stakater.com/reload: longhorn-secret
     longhornManager:
-      nodeSelector: "storage=longhorn"
+      nodeSelector:
+        storage: longhorn
     longhornUI:
-      nodeSelector: "storage=longhorn"
+      nodeSelector:
+        storage: longhorn
     longhornDriverDeployer:
-      nodeSelector: "storage=longhorn"
+      nodeSelector:
+        storage: longhorn
