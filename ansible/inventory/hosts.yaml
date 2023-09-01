@@ -35,3 +35,6 @@ kubernetes:
         kobold-7-scale-sorcerer:
           ansible_user: kobold
           ansible_host: 192.168.1.243
+        kobold-8-toaster:
+          ansible_user: kobold
+          ansible_host: 192.168.1.203
