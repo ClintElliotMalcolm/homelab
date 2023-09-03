@@ -46,7 +46,7 @@ spec:
       enabled: true
       ingressClassName: external
       hosts:
-        - host: &host pihole.${SECRET_DOMAIN}
+        - host: &host "pihole.${SECRET_DOMAIN}"
           paths:
             - path: /admin
               pathType: Prefix
