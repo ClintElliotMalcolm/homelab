@@ -17,6 +17,7 @@ resources:
   - ./kubernetes-dashboard.yaml
   - ./longhorn.yaml
   - ./metrics-server.yaml
+  - ./mojo2600-charts.yaml
   - ./node-feature-discovery.yaml
   - ./prometheus-community.yaml
   - ./stakater.yaml
