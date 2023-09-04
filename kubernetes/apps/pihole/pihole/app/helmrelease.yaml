@@ -34,10 +34,10 @@ spec:
       type: LoadBalancer
       loadBalancerIP: "${PIHOLE_ENDPOINT}"
       externalTrafficPolicy: Local
-    serviceWeb:
-      type: LoadBalancer
-      loadBalancerIP: "${PIHOLE_ENDPOINT}"
-      externalTrafficPolicy: Local
+#    serviceWeb:
+#      type: LoadBalancer
+#      loadBalancerIP: "${PIHOLE_ENDPOINT}"
+#      externalTrafficPolicy: Local
     serviceDhcp:
       enabled: false
     https:
