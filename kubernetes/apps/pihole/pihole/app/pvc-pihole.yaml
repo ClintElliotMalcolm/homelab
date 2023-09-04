@@ -4,7 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: pvc-pihole
 spec:
-  storageClassName: longhorn
+  storageClassName: longhorn-crypto-global
   accessModes:
     - ReadWriteOnce
   resources:
