@@ -43,7 +43,7 @@ spec:
   selector:
     app: unbound
   type: ClusterIP
-  clusterIP: ${UNDOUND_ENDPOINT}
+  clusterIP: ${UNBOUND_ENDPOINT}
   ports:
     - name: 53-udp
       port: 53
