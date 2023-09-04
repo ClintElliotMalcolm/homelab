@@ -32,10 +32,10 @@ spec:
       tag: "2023.03.1"
       pullPolicy: IfNotPresent
     replicaCount: 1
-    serviceDns:
-      type: LoadBalancer
-      loadBalancerIP: "${PIHOLE_ENDPOINT}"
-      externalTrafficPolicy: Local
+#    serviceDns:
+#      type: LoadBalancer
+#      loadBalancerIP: "${PIHOLE_ENDPOINT}"
+#      externalTrafficPolicy: Local
 #    serviceWeb:
 #      type: LoadBalancer
 #      loadBalancerIP: "${PIHOLE_ENDPOINT}"
