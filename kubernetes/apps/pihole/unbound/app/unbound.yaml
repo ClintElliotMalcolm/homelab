@@ -21,10 +21,10 @@ spec:
         image: docker.io/pedantic/unbound
         ports:
         - name: svc-53-udp
-          containerPort: 5353
+          containerPort: 53
           protocol: UDP
         - name: svc-53-tcp
-          containerPort: 5353
+          containerPort: 53
           protocol: TCP
         resources:
           limits:
@@ -54,12 +54,12 @@ spec:
   clusterIP: ${UNBOUND_ENDPOINT}
   ports:
     - name: 53-udp
-      port: 5353
-      targetPort: 5353
+      port: 53
+      targetPort: 53
       protocol: UDP
     - name: 53-tcp
-      port: 5353
-      targetPort: 5353
+      port: 53
+      targetPort: 53
       protocol: TCP
 ---
 apiVersion: v1
@@ -74,7 +74,7 @@ data:
         verbosity: 1
 
         interface: 127.0.0.1
-        port: 5353
+        port: 53
         do-ip4: yes
         do-udp: yes
         do-tcp: yes
