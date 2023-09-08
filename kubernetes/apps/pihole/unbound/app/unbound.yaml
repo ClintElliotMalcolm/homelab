@@ -54,7 +54,7 @@ spec:
     app: unbound
   type: LoadBalancer
   clusterIP: ${UNBOUND_ENDPOINT}
-  externalTrafficPolicy: "CLUSTER"
+  externalTrafficPolicy: "Cluster"
   ports:
     - name: 53-udp
       port: 53
