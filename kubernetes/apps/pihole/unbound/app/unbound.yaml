@@ -23,9 +23,9 @@ spec:
         - name: svc-53-udp
           containerPort: 53
           protocol: UDP
-        - name: svc-53-tcp
-          containerPort: 53
-          protocol: TCP
+        #- name: svc-53-tcp
+        #  containerPort: 53
+        #  protocol: TCP
         resources:
           limits:
             memory: "300Mi"
@@ -60,10 +60,10 @@ spec:
       port: 53
       targetPort: 53
       protocol: UDP
-    - name: 53-tcp
-      port: 53
-      targetPort: 53
-      protocol: TCP
+    #- name: 53-tcp
+    #  port: 53
+    #  targetPort: 53
+    #  protocol: TCP
 ---
 apiVersion: v1
 kind: ConfigMap
