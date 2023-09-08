@@ -47,11 +47,14 @@ apiVersion: v1
 metadata:
   name: unbound-service
   namespace: pihole
+  annotations:
+    io.cilium/lb-ipam-ips: "192.168.1.45"
 spec:
   selector:
     app: unbound
   type: LoadBalancer
   clusterIP: ${UNBOUND_ENDPOINT}
+  externalTrafficPolicy: "CLUSTER"
   ports:
     - name: 53-udp
       port: 53
